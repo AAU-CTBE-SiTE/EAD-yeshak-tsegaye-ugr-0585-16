@@ -1,4 +1,4 @@
-# ESP Lab 1 – Java JDBC & MySQL
+# Lab 1 – Java JDBC & MySQL
 
 ## Tools:
 
