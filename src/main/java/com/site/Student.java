@@ -14,10 +14,7 @@ public class Student {
     private String tech;
 
     public Student() {}
-    public Student(String name, String tech) {
-        this.name = name;
-        this.tech = tech;
-    }
+
     public int getId() { return id; }
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
