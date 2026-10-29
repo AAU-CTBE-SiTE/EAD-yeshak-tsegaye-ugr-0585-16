@@ -9,5 +9,3 @@ Topics:
 - Constructor injection
 - Literal dependency injection
 - Object dependency injection
-
-Collections Dependency Injection is excluded.
