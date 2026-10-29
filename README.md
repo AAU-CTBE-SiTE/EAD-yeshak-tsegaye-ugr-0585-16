@@ -1,24 +1,13 @@
-# Lab 1 – Java JDBC & MySQL
+# Lab 3 - Spring IoC and Dependency Injection
 
-## Tools:
+Spring Core lab covering pages 1-19 of the course material.
 
-- Java 17
-- MySQL
-- JDBC (MySQL Connector/J)
-- Maven
+Topics:
+- Spring IoC container
+- XML bean configuration
+- Setter injection
+- Constructor injection
+- Literal dependency injection
+- Object dependency injection
 
-## Lab Tasks:
-
-1. Created the `StudentsDB` database and `students` table.
-2. Inserted 11 student records.
-3. Retrieved and displayed the first 5 students.
-4. Updated a student's first name.
-5. Deleted a student record.
-6. Calculated the average student grade.
-
-## Run:
-
-1. Install Java 17, Maven, and MySQL, and start the MySQL server.
-2. Open the `jdpc_connection` folder.
-3. Update the MySQL username and password in `App.java` and `StudentDatabaseOperations.java`.
-4. Run `com.site.StudentDatabaseOperations` to execute all six tasks.
+Collections Dependency Injection is excluded.
