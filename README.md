@@ -1,24 +1,14 @@
-# Lab 1 – Java JDBC & MySQL
+# Lab 4 - Spring Annotation-Based Dependency Injection
 
-## Tools:
+This lab demonstrates Spring dependency injection using annotations and Java configuration.
 
-- Java 17
-- MySQL
-- JDBC (MySQL Connector/J)
-- Maven
+Concepts:
+- @Configuration
+- @Bean
+- @Component
+- @Autowired
+- Constructor dependency injection
+- Object injection
+- List of beans injection
 
-## Lab Tasks:
-
-1. Created the `StudentsDB` database and `students` table.
-2. Inserted 11 student records.
-3. Retrieved and displayed the first 5 students.
-4. Updated a student's first name.
-5. Deleted a student record.
-6. Calculated the average student grade.
-
-## Run:
-
-1. Install Java 17, Maven, and MySQL, and start the MySQL server.
-2. Open the `jdpc_connection` folder.
-3. Update the MySQL username and password in `App.java` and `StudentDatabaseOperations.java`.
-4. Run `com.site.StudentDatabaseOperations` to execute all six tasks.
+The application uses AnnotationConfigApplicationContext instead of XML configuration.

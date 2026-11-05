@@ -1,20 +1,17 @@
 package com.site;
-import java.sql.*;
-public class App
-{
-    private static final String URL = "jdbc:mysql://localhost:3306/studentDB";
-    private static final String USER = "root";
-    private static final String PASSWORD = "abebebesobela";
 
-    public static void main( String[] args )
-    {
-        System.out.println("connecting DataBase");
-        try(Connection connection = DriverManager.getConnection(URL,USER, PASSWORD)){
-            System.out.println("Connection successful");
-        }
-        catch(SQLException e){
-            System.out.println( "Connection failed" );
-        }
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+public class App {
+
+    public static void main(String[] args) {
+
+        ApplicationContext context =
+                new AnnotationConfigApplicationContext(AppConfig.class);
+
+        Student student = context.getBean(Student.class);
+
+        student.getDetails();
     }
 }
