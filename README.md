@@ -1,17 +1,8 @@
 # Lab 5 - Spring Boot CRUD REST API
 
-**Student:** Yeshak Tsegaye  
-**Student ID:** UGR/0585/16
-
 ## Description
 
 This lab implements a REST API for managing actors using Spring Boot and an `ArrayList`. It supports Create, Read, Update, and Delete (CRUD) operations without a database.
-
-## Technologies
-
-- Java 21
-- Spring Boot (Spring Web MVC)
-- Maven
 
 ## Run
 
