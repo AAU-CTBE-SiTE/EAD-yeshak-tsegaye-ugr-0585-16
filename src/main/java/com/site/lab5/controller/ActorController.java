@@ -1,4 +1,6 @@
-package com.site.lab5;
+package com.site.lab5.controller;
+
+import com.site.lab5.model.Actor;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -62,3 +64,4 @@ public class ActorController {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Actor not found");
     }
 }
+

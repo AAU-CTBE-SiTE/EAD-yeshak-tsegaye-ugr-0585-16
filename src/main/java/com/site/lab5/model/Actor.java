@@ -1,4 +1,4 @@
-package com.site.lab5;
+package com.site.lab5.model;
 
 public class Actor {
     private Long id;
@@ -28,3 +28,4 @@ public class Actor {
         this.name = name;
     }
 }
+
