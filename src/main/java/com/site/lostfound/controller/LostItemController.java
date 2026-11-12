@@ -20,9 +20,6 @@ public class LostItemController {
     @GetMapping("/{id}")
     public LostItem one(@PathVariable int id) { return service.getById(id); }
 
-    @PostMapping
-    public LostItem add(@RequestBody LostItem item) { return service.add(item); }
-
     @PutMapping("/{id}/claim")
     public LostItem claim(@PathVariable int id) { return service.claim(id); }
 
