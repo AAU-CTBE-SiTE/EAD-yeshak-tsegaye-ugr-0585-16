@@ -1,24 +1,30 @@
-# Lab 1 – Java JDBC & MySQL
+# Lab 6 - Spring AOP
 
-## Tools:
+Name: Yeshak Tsegaye
+ID: UGR/0585/16
 
-- Java 17
-- MySQL
-- JDBC (MySQL Connector/J)
+In this lab, I created a Hotel Lost and Found API using Spring Boot and Aspect-Oriented Programming.
+
+The application stores items in an ArrayList without a database.
+
+AOP is used for logging method execution, handling errors, and checking execution time.
+
+## Tools
+- Java 21
+- Spring Boot
 - Maven
+- IntelliJ IDEA
 
-## Lab Tasks:
+## Run
+Run LostFoundApplication.java.
 
-1. Created the `StudentsDB` database and `students` table.
-2. Inserted 11 student records.
-3. Retrieved and displayed the first 5 students.
-4. Updated a student's first name.
-5. Deleted a student record.
-6. Calculated the average student grade.
+API: http://localhost:8081/items
 
-## Run:
-
-1. Install Java 17, Maven, and MySQL, and start the MySQL server.
-2. Open the `jdpc_connection` folder.
-3. Update the MySQL username and password in `App.java` and `StudentDatabaseOperations.java`.
-4. Run `com.site.StudentDatabaseOperations` to execute all six tasks.
+## AOP Concepts
+- @Aspect
+- @Pointcut
+- @Before
+- @After
+- @AfterReturning
+- @AfterThrowing
+- @Around
