@@ -1,24 +1,32 @@
-# Lab 1 – Java JDBC & MySQL
+# Lab 7 - Spring Boot CRUD with MySQL
 
-## Tools:
+Name: Yeshak Tsegaye
+ID: UGR/0585/16
 
-- Java 17
+I created an Actor Management System using Spring Boot, Spring Data JPA, and MySQL.
+
+The project supports Create, Read, Update, and Delete operations.
+
+## Tools
+- Java 21
+- Spring Boot
+- Spring Data JPA
 - MySQL
-- JDBC (MySQL Connector/J)
 - Maven
+- IntelliJ IDEA
+- Postman
 
-## Lab Tasks:
+## Structure
+- model - Actor entity
+- repo - Database operations
+- service - CRUD methods
+- controller - REST APIs
 
-1. Created the `StudentsDB` database and `students` table.
-2. Inserted 11 student records.
-3. Retrieved and displayed the first 5 students.
-4. Updated a student's first name.
-5. Deleted a student record.
-6. Calculated the average student grade.
+## Run
+Create the actor_db database.
+Configure the DB_PASSWORD environment variable.
+Run ActorManagementApplication.java.
 
-## Run:
+API: http://localhost:8080/actors
 
-1. Install Java 17, Maven, and MySQL, and start the MySQL server.
-2. Open the `jdpc_connection` folder.
-3. Update the MySQL username and password in `App.java` and `StudentDatabaseOperations.java`.
-4. Run `com.site.StudentDatabaseOperations` to execute all six tasks.
+All CRUD operations were tested using the database.
