@@ -1,5 +1,8 @@
 package com.site.customer_service.controller;
 
+
+import com.site.customer_service.dto.CustomerOrdersDTO;
+import org.springframework.http.ResponseEntity;
 import com.site.customer_service.model.Customer;
 import com.site.customer_service.service.CustomerService;
 import org.springframework.web.bind.annotation.*;
@@ -41,5 +44,19 @@ public class CustomerController {
     @DeleteMapping("/{id}")
     public void deleteCustomer(@PathVariable String id) {
         customerService.deleteCustomer(id);
+    }
+
+    @GetMapping("/{id}/orders")
+    public ResponseEntity<CustomerOrdersDTO> getCustomerWithOrders(
+            @PathVariable String id) {
+
+        CustomerOrdersDTO result =
+                customerService.getCustomerWithOrders(id);
+
+        if (result == null) {
+            return ResponseEntity.notFound().build();
+        }
+
+        return ResponseEntity.ok(result);
     }
 }
